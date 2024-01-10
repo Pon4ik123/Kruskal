@@ -113,7 +113,7 @@ public:
         }
 
         for(const auto& temp: mst){
-            cout<<"Krawedzi "<<temp.start<<"-"<<temp.end<<" | "<<"z kosztem: "<<temp.cost<<endl;
+            cout<<"Edge "<<temp.start<<"-"<<temp.end<<" | "<<"with cost: "<<temp.cost<<endl;
         }
     }
 };
@@ -154,6 +154,5 @@ int main() {
     clock_t t2 = clock();
     double time = static_cast<double>(t2 - t1) / CLOCKS_PER_SEC;
     cout << "Time to kruskal algorithm: " << time << " seconds" << endl;
-    //saveGraph(graph);
     return 0;
 }
